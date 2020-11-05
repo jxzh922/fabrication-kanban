@@ -28,5 +28,5 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb://localhost:27017/fabrication_kanban"
+  "mongodb": "mongodb://admin_test:password_test@cc-mongodb.mongodb.rds.aliyuncs.com:3717/nucleus_test"
 }

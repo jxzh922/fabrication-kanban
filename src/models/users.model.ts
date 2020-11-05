@@ -9,11 +9,11 @@ export default function (app: Application): Model<any> {
   const modelName = 'users';
   const mongooseClient: Mongoose = app.get('mongooseClient');
   const schema = new mongooseClient.Schema({
-  
-    email: { type: String, unique: true, lowercase: true },
+
+    username: { type: String, unique: true, immutable: true, lowercase: true, required: [true, '请提供有效的用户名.'] },
     password: { type: String },
-  
-  
+
+
   }, {
     timestamps: true
   });
